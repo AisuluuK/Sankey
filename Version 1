@@ -13,7 +13,7 @@ library(curl)
 library(readr)
 
 
-SankeyTestR3 <- read_csv("C:/Users/Aisuluu Kurmanbek/Desktop/ForteGaz/Electricity&Gas market/for R/SankeyTestR1.csv")
+SankeyTestR1 <- read_csv("C:/Users/Aisuluu Kurmanbek/Desktop/ForteGaz/Electricity&Gas market/for R/SankeyTestR1.csv")
 View(SankeyTestR1)
 
 
