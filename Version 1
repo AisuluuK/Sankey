@@ -18,7 +18,7 @@ View(SankeyTestR1)
 
 
 
-sankeyNetwork(Links = SankeyTestR1$Link, 
+sankeyNetwork(Links = SankeyTestR1$Source, 
               Nodes = SankeyTestR1$Name, 
               Source = "Source",
               Target = "Target", 
