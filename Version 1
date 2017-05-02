@@ -1,0 +1,29 @@
+# Sankey
+create a sankey diagram from the dataset
+
+install.packages("networkD3")
+install.packages("jsonlite")
+install.packages("magrittr")
+install.packages("curl")
+
+library(networkD3)
+library(jsonlite)
+library(magrittr)
+library(curl)
+library(readr)
+
+
+SankeyTestR3 <- read_csv("C:/Users/Aisuluu Kurmanbek/Desktop/ForteGaz/Electricity&Gas market/for R/SankeyTestR3.csv")
+View(SankeyTestR3)
+
+
+
+sankeyNetwork(Links = SankeyTestR3$Link, 
+              Nodes = SankeyTestR3$Name, 
+              Source = "Source",
+              Target = "Target", 
+              Value = "Value", 
+              NodeID = "Name",
+              units = "TWh", 
+              fontSize = 12, 
+              nodeWidth = 30)
