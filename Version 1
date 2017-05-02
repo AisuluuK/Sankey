@@ -13,13 +13,13 @@ library(curl)
 library(readr)
 
 
-SankeyTestR3 <- read_csv("C:/Users/Aisuluu Kurmanbek/Desktop/ForteGaz/Electricity&Gas market/for R/SankeyTestR3.csv")
-View(SankeyTestR3)
+SankeyTestR3 <- read_csv("C:/Users/Aisuluu Kurmanbek/Desktop/ForteGaz/Electricity&Gas market/for R/SankeyTestR1.csv")
+View(SankeyTestR1)
 
 
 
-sankeyNetwork(Links = SankeyTestR3$Link, 
-              Nodes = SankeyTestR3$Name, 
+sankeyNetwork(Links = SankeyTestR1$Link, 
+              Nodes = SankeyTestR1$Name, 
               Source = "Source",
               Target = "Target", 
               Value = "Value", 
